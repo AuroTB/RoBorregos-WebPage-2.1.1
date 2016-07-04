@@ -3,9 +3,6 @@
 
 <head>
 
-	<!--<meta charset="utf-8">
-	<meta name="viewpoint" content="width=device-width, initial-scale=1">-->
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,8 +23,6 @@
 </head>
 <body>
 
-	<!-- Barra de navegación lateral izquierda -->
-
 	<!-- Sidebar -->
 	<nav class="navbar-animation">
 		<a href="#" class="btn btn-succes nav-toggle-btn">
@@ -36,7 +31,7 @@
 			<span class="icon-bar"></span>
 		</a>
 
-		<ul class="navbar-nav-2">
+		<ul class="side-navbar-nav">
 			<li><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>Account</a></li>
 			<li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Settings</a></li>
 			<li><a href="#"><i class="fa fa-shield" aria-hidden="true"></i>Logout</a></li>
@@ -50,11 +45,6 @@
 				<div class="panel-group" id="accordion" role="tablist">
 		            <div class="panel panel-default">
 		            	<div class="pannel-heading" role="tab" id="heading1">
-		                    <!--<h4 class="panel-title">
-		                      	<a href="#collapse1" data-toggle="collapse" data-parent="accordion">
-		                        	Encabezado #1
-		                    	</a>
-		                    </h4>-->
 		                    <a href="#collapse1" data-toggle="collapse" data-parent="accordion" class="btn btn-default btn-block">
 		                    	Encabezado #1
 		                    </a>
@@ -85,18 +75,15 @@
 		
 		(function(){
 
-			/*var bodyEl = $('body'),
-				navToggleBtn = bodyEl.find('.nav-toggle-btn');
-
-			navToggleBtn.on('click', function(e){
-				bodyEl.toggleClass('active-nav');
-				e.preventDefault();
-			});*/
-
 			var bodyEl = $('body'),
 				navToggle = bodyEl.find('.navbar-animation');
 
 			navToggle.on('mouseover', function(e){
+				bodyEl.toggleClass('active-nav');
+				e.preventDefault();
+			});
+
+			navToggle.on('mouseout', function(e){
 				bodyEl.toggleClass('active-nav');
 				e.preventDefault();
 			});
