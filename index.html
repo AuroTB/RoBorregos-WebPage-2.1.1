@@ -1,24 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
 	<title>RoBorregos</title>
 
-	<!-- Link to Bootstrap file -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Link to font awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
 <body>
 
+	<!-- Barra de navegación lateral izquierda -->
+
+	<!-- Sidebar -->
+	<nav>
+		<a href="#" class="btn btn-succes nav-toggle-btn">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+
+		<ul class="navbar-nav-2">
+			<li><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>Account</a></li>
+			<li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Settings</a></li>
+			<li><a href="#"><i class="fa fa-shield" aria-hidden="true"></i>Logout</a></li>
+		</ul>
+	</nav>
+
+	<!-- Page content -->
+	<div class="container-fluid content">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel-group" id="accordion" role="tablist">
+		            <div class="panel panel-default">
+		            	<div class="pannel-heading" role="tab" id="heading1">
+		                    <!--<h4 class="panel-title">
+		                      	<a href="#collapse1" data-toggle="collapse" data-parent="accordion">
+		                        	Encabezado #1
+		                    	</a>
+		                    </h4>-->
+		                    <a href="#collapse1" data-toggle="collapse" data-parent="accordion" class="btn btn-default btn-block">
+		                    	Encabezado #1
+		                    </a>
+		            	</div>
+
+		              	<div class="panel-collapse collapse" id="collapse1">
+		                	<div class="panel-body-fluid">
+		                  		<a href="#" class="btn btn-success btn-block" data-toggle="collapse" data-parent="accordion">
+		                  			Opción 1
+		                  		</a>
+		                	</div>
+		              	</div>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+	</div>
 
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		
+		(function(){
+
+			var bodyEl = $('body'),
+				navToggleBtn = bodyEl.find('.nav-toggle-btn');
+
+			navToggleBtn.on('click', function(e){
+				bodyEl.toggleClass('active-nav');
+				e.preventDefault();
+			});
+
+		})();
+
+	</script>
 </body>
 </html>
