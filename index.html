@@ -32,9 +32,39 @@
 		</a>
 
 		<ul class="side-navbar-nav">
-			<li><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>Account</a></li>
-			<li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Settings</a></li>
-			<li><a href="#"><i class="fa fa-shield" aria-hidden="true"></i>Logout</a></li>
+			<li>
+				<div class="panel-group" id="accordion" role="tablist">
+		            <div class="panel panel-default">
+		            	<div class="pannel-heading" role="tab" id="heading1">
+		                    <a href="#collapse1" data-toggle="collapse" data-parent="accordion" class="btn-side-navbar-1">
+		                    	<i class="icon-fixed-width fa fa-file-code-o fa-fw" aria-hidden="true"></i>
+		                    	Account
+		                    	<i class="icon-fixed-width fa fa-angle-left icon-arrow-1 pull-right" aria-hidden="true"></i>
+		                    </a>
+		            	</div>
+
+		              	<div class="panel-collapse collapse" id="collapse1">
+		                	<div class="panel-body-fluid">
+		                  		<a href="#" class="btn btn-block btn-collapse-1" data-toggle="collapse" data-parent="accordion">
+		                  			Option 1
+		                  		</a>
+		                	</div>
+		              	</div>
+		            </div>
+		        </div>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icon-fixed-width fa fa-tachometer fa-fw" aria-hidden="true"></i>
+					Settings
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icon-fixed-width fa fa-shield fa-fw" aria-hidden="true"></i>
+					Logout
+				</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -42,11 +72,15 @@
 	<div class="container-fluid content">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="panel-group" id="accordion" role="tablist">
+				<img src="img/header_2.png" class="img-responsive sr-button" alt="">
+				<br>
+				<img src="img/header.jpg" class="img-responsive sr-button" alt="">
+				<!--<div class="panel-group" id="accordion" role="tablist">
 		            <div class="panel panel-default">
 		            	<div class="pannel-heading" role="tab" id="heading1">
-		                    <a href="#collapse1" data-toggle="collapse" data-parent="accordion" class="btn btn-default btn-block">
+		                    <a href="#collapse1" data-toggle="collapse" data-parent="accordion" class="btn btn-default btn-block btn-experiment">
 		                    	Encabezado #1
+		                    	<i class="fa fa-angle-left icon-arrow" aria-hidden="true"></i>
 		                    </a>
 		            	</div>
 
@@ -58,7 +92,7 @@
 		                	</div>
 		              	</div>
 		            </div>
-		        </div>
+		        </div>-->
 	        </div>
 	    </div>
 	</div>
@@ -76,7 +110,8 @@
 		(function(){
 
 			var bodyEl = $('body'),
-				navToggle = bodyEl.find('.navbar-animation');
+				navToggle = bodyEl.find('.navbar-animation'),
+				btnSide1 = bodyEl.find('.btn-side-navbar-1');
 
 			navToggle.on('mouseover', function(e){
 				bodyEl.toggleClass('active-nav');
@@ -85,6 +120,11 @@
 
 			navToggle.on('mouseout', function(e){
 				bodyEl.toggleClass('active-nav');
+				e.preventDefault();
+			});
+
+			btnSide1.on('click', function(e){
+				bodyEl.toggleClass('rotate-arrow-1');
 				e.preventDefault();
 			});
 
