@@ -126,6 +126,12 @@
 	</nav>
 
 	<!-- Page content -->
+	<header class="parallax-container">
+		<div class="logo-header"></div>
+		<div class="front-robot"></div>
+		<div class="back-robot"></div>
+	</header>
+
 	<div class="container-fluid content">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
@@ -162,41 +168,10 @@
     <script src="js/jquery.js"></script>
 	<!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Functions script -->
+    <script src="js/functions.js"></script>
     <script type="text/javascript">
 		
-		(function(){
-
-			var bodyEl = $('body'),
-				navToggle = bodyEl.find('.side-navbar'),
-				navToggleSponsors = bodyEl.find('.side-navbar-sponsors'),
-				btnSide1 = bodyEl.find('.btn-side-navbar-1');
-
-			navToggle.on('mouseover', function(e){
-				bodyEl.toggleClass('active-nav');
-				e.preventDefault();
-			});
-
-			navToggle.on('mouseout', function(e){
-				bodyEl.toggleClass('active-nav');
-				e.preventDefault();
-			});
-
-			navToggleSponsors.on('mouseover', function(e){
-				bodyEl.toggleClass('active-nav-sponsors');
-				e.preventDefault();
-			});
-
-			navToggleSponsors.on('mouseout', function(e){
-				bodyEl.toggleClass('active-nav-sponsors');
-				e.preventDefault();
-			});
-
-			btnSide1.on('click', function(e){
-				bodyEl.toggleClass('rotate-arrow-1');
-				e.preventDefault();
-			});
-
-		})();
 
 	</script>
 </body>

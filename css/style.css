@@ -1,3 +1,6 @@
+html{
+	height: 100%;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -5,7 +8,11 @@
 body{
 	font-family: Open Sans, Arial, sans-serif;
 	overflow-x: hidden;
+	height: 100%;
 }
+/*header{
+	height: 100%;
+}*/
 .side-navbar{
 	position: fixed;
 	top: 0;
@@ -16,12 +23,15 @@ body{
 .side-navbar-sponsors .row{
 	height: 100%;
 }
+.side-navbar-sponsors .row .banner-sponsors-img{
+	height: 25%;
+}
 .side-navbar-sponsors .hola{
 	background-color: #f6a821;
 	height: 100%;
 }
 .side-navbar-sponsors{
-	height: 28%;
+	height: 35%;
 	width: 150px;
 	position: fixed;
 	margin: auto;
@@ -112,6 +122,10 @@ body{
 	padding-right: 54px;
 	transition: transform 0.5s, padding-right 0.5s ease;
 }
+.active-nav .parallax-container{
+	transform: translate3d(170px, 0, 0);
+	padding-right: 116px;
+}
 .active-nav .content{
 	transform: translate3d(170px, 0, 0);
 	padding-right: 116px;
@@ -155,4 +169,57 @@ body{
 }
 .navbar{
 	border: 0px;
+}
+.parallax-container{
+	position: relative;
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	/*padding-top: 100px;*/
+	/*padding-bottom: 300px;*/
+	/*background-color: #9e9e9e;*/
+	text-align: center;
+	transform: translate3d(54px, 0, 0);
+	/*padding-right: 54px;*/
+	transition: transform 0.5s, padding-right 0.5s ease;
+	height: 100%;
+}
+.logo-header{
+	height: 200px;
+	width: 100%;
+	background-image: url(../img/header_2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+}
+.front-robot{
+	height: 400px;
+	width: 533px;
+	background-image: url(../img/portfolio/robot_soccer_1.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 90%;
+	margin-left: -480px;
+	top: 58%;
+}
+.back-robot{
+	height: 400px;
+	width: 533px;
+	background-image: url(../img/portfolio/robot_soccer_1.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 40%;
+	margin-left: -480px;
+	top: 5%;
+	z-index: -1;
 }
