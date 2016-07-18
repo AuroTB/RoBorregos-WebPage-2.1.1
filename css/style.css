@@ -177,7 +177,7 @@ body{
 .front-robot{
 	height: 400px;
 	width: 533px;
-	background-image: url(../img/portfolio/robot_soccer_1.png);
+	background-image: url(../img/portfolio/Robots/robot_soccer_1.png);
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -189,7 +189,7 @@ body{
 .back-robot{
 	height: 400px;
 	width: 533px;
-	background-image: url(../img/portfolio/robot_soccer_1.png);
+	background-image: url(../img/portfolio/Robots/robot_soccer_1.png);
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -210,7 +210,7 @@ body{
 .content{
 	padding-top: 100px;
 	padding-bottom: 300px;
-	background-color: #9e9e9e;
+	background-color: #d9d9d9; /*#9e9e9e */
 	text-align: center;
 	transform: translate3d(54px, 0, 0);
 	padding-right: 54px;
@@ -225,45 +225,27 @@ body{
 /*======================================================*/
 /* About Us CSS */
 
-div.about-us{
-	padding: 50px;
-	padding-left: 180px;
-} 
-div.col-sm-6 {
-	font-size: 150%;
-	margin-top: 100px;
-	padding : 50px;
-	text-align: center;
-	
-}
-div.col-sm-4{
-	padding:50px;
-	font-size: 200%;
-	text-align: center;
-}
-h2.col-sm-6
-{
-	color:#ffcc00;
-	background-color: white;
-}
 .about-us-header{
 	padding-top: 15%;
 	position: relative;
-	background-image: url(../img/portfolio/7.1.jpg);
+	background-image: url(../img/portfolio/3.jpg);
 	background-size: cover;
 	background-position: top center;
+	font-size: 150%;
+	/*margin-top: 100px; */
+  	padding : 15%; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	transform: translate3d(54px, 0, 0);
 	transition: transform 0.5s, padding-right 0.5s ease;
 	height: 100%;
 	text-align: center;
-	font-size: 200%;
 }
-.active-nav .about-us-header{
-	transform: translate3d(170px, 0, 0);
-	padding-right: 116px;
+header p{
+	padding-left: 5%;
+	padding-right: 8%;
 }
+
 .image-equipo-background{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -271,7 +253,28 @@ h2.col-sm-6
 	opacity: 0.6;
 	color: white;
 }
-header p{
-	padding-left: 5%;
-	padding-right: 8%;
+
+.active-nav .about-us-header{
+	transform: translate3d(170px, 0, 0);
+	padding-right: 116px;
+}
+.subtitle-mision-vision{
+	font-size: 250%;
+	color:#f6a821;
+	padding-top: 0%;
+	margin-top: 0%;
+}
+
+.mission-vision {
+text-align: center;
+padding-top: 0%;
+font-size: 200%;
+}
+
+
+.final-quote{
+	padding-top: 50%;
+	padding:10%;
+	font-size: 200%;
+	text-align: center;
 }
