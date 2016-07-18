@@ -220,20 +220,15 @@ body{
 	transform: translate3d(170px, 0, 0);
 	padding-right: 116px;
 }
+
+
+/*======================================================*/
 /* About Us CSS */
 
 div.about-us{
-	
 	padding: 50px;
 	padding-left: 180px;
-
-	} 
-div.image-equipo-background
-{
-	text-align: center;
-	background-image: url('7.1.jpg');
 } 
-
 div.col-sm-6 {
 	font-size: 150%;
 	margin-top: 100px;
@@ -250,4 +245,33 @@ h2.col-sm-6
 {
 	color:#ffcc00;
 	background-color: white;
+}
+.about-us-header{
+	padding-top: 15%;
+	position: relative;
+	background-image: url(../img/portfolio/7.1.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	transform: translate3d(54px, 0, 0);
+	transition: transform 0.5s, padding-right 0.5s ease;
+	height: 100%;
+	text-align: center;
+	font-size: 200%;
+}
+.active-nav .about-us-header{
+	transform: translate3d(170px, 0, 0);
+	padding-right: 116px;
+}
+.image-equipo-background{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+}
+header p{
+	padding-left: 5%;
+	padding-right: 8%;
 }
