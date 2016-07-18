@@ -220,3 +220,34 @@ body{
 	transform: translate3d(170px, 0, 0);
 	padding-right: 116px;
 }
+/* About Us CSS */
+
+div.about-us{
+	
+	padding: 50px;
+	padding-left: 180px;
+
+	} 
+div.jumbotron
+{
+	text-align: center;
+	background-image: url('7.1.jpg');
+} 
+
+div.col-sm-6 {
+	font-size: 150%;
+	margin-top: 100px;
+	padding : 50px;
+	text-align: center;
+	
+}
+div.col-sm-4{
+	padding:50px;
+	font-size: 200%;
+	text-align: center;
+}
+h2.col-sm-6
+{
+	color:#ffcc00;
+	background-color: white;
+}
