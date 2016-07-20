@@ -1,29 +1,33 @@
-$(window).scroll(function(){
+$(document).ready(function(){
 
-	var wScroll = $(this).scrollTop();
+	$(window).scroll(function(){
 
-	$('.logo-header').css({
-		'transform' : 'translate(0px, '+ wScroll /2 +'px)'
+		var wScroll = $(this).scrollTop();
+
+		$('.logo-header').css({
+			'transform' : 'translate(0px, '+ wScroll /2 +'px)'
+		});
+
+		$('.front-robot').css({
+			'transform' : 'translate(0px, '+ wScroll /15 +'%)'
+		});
+
+		$('.back-robot').css({
+			'transform' : 'translate(0px, '+ wScroll /7 +'%)'
+		});
+
+		console.log(wScroll)
+
 	});
 
-	$('.front-robot').css({
-		'transform' : 'translate(0px, '+ wScroll /15 +'%)'
-	});
-
-	$('.back-robot').css({
-		'transform' : 'translate(0px, '+ wScroll /7 +'%)'
-	});
-
-	console.log(wScroll)
-
-});
-
-(function(){
-
+	var accordion = $('.side-navbar-ul li:has(ul)');
 	var bodyEl = $('body'),
 	navToggle = bodyEl.find('.side-navbar'),
 	navToggleSponsors = bodyEl.find('.side-navbar-sponsors'),
-	btnSide1 = bodyEl.find('.btn-side-navbar-1');
+	btnSide1 = bodyEl.find('.btn-side-navbar-1'),
+	pageContent = bodyEl.find('.content'),
+	parallaxContent = bodyEl.find('.parallax-container'),
+	navigarionBar = bodyEl.find('.container-fluid');
 
 	navToggle.on('mouseover', function(e){
 		bodyEl.toggleClass('active-nav');
@@ -50,4 +54,45 @@ $(window).scroll(function(){
 		e.preventDefault();
 	});
 
-})();
+	pageContent.on('mouseover', function(e){
+		e.preventDefault();
+		if (accordion.hasClass('activado')){
+			accordion.removeClass('activado');
+			accordion.children('ul').slideUp();
+		}
+	});
+
+	parallaxContent.on('mouseover', function(e){
+		e.preventDefault();
+		if (accordion.hasClass('activado')){
+			accordion.removeClass('activado');
+			accordion.children('ul').slideUp();
+		}
+	});
+
+	navigarionBar.on('mouseover', function(e){
+		e.preventDefault();
+		if (accordion.hasClass('activado')){
+			accordion.removeClass('activado');
+			accordion.children('ul').slideUp();
+		}
+	});
+
+	$('.side-navbar-ul li:has(ul)').click(function(e){
+
+		e.preventDefault();
+
+		if ($(this).hasClass('activado')){
+			$(this).removeClass('activado');
+			$(this).children('ul').slideUp();
+		}
+		else{
+			$('.side-navbar-ul li ul').slideUp();
+			$('.side-navbar-ul li').removeClass('activado');
+			$(this).addClass('activado');
+			$(this).children('ul').slideDown();
+		}
+
+	});
+
+});
