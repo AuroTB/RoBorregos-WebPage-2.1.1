@@ -309,7 +309,12 @@ font-size: 200%;
 
 .events-jumbo
 {
-	height: 40%;
-	width: 40%;
-	margin-left:10%;
+	height: 25%;
+	width: 25%;
+	margin-left:5%;
+}
+div.events-jumbo:hover
+{
+	m
+	text-decoration: underline;
 }
