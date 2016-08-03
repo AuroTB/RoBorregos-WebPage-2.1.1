@@ -210,7 +210,7 @@ body{
 .content{
 	padding-top: 100px;
 	padding-bottom: 300px;
-	background-color: #9e9e9e;
+	background-color: #d9d9d9;
 	text-align: center;
 	transform: translate3d(54px, 0, 0);
 	padding-right: 54px;
@@ -224,26 +224,29 @@ body{
 
 /*========================================================
 				team-members                 */
+div#integrante-content{
+	text-align: unset;
+	padding-bottom: 80px;
+}
+
 div.integrantes-integrante{
     height: 280px; 
     width: 65%; 
     position:relative;
-    background-color: cornflowerblue; 
-    border: 2px solid cornflowerblue; 
+    background-color: darkcyan; 
+    border: 2px solid darkcyan; 
     border-radius: 5px; 
     left:15%; /*center margin: auto; */
 	margin-bottom: 2%;
 }
 
 div.integrantes-foto{
-    position: relative; 
-    left:4%; 
+    position: relative;  
 
     width:24%;
-    height:86%;
+    height:100%; 
     display:inline-block;
     overflow:hidden;
-    top:7%;
 }
 
 div.integrantes-foto > img{
@@ -260,12 +263,13 @@ div.integrantes-foto > img{
 }
 
 div.integrantes-barrita{
-    height: 90%; 
-    width: 0.2%; 
-    background-color: DimGray; 
+    height: 100%;  
+    width: 6.5%; 
+    background-color: #838383; 
     position: absolute; 
-    top: 5%; 
-    left:33%
+    top: 0%;
+    left: 24.1%;
+
 }
 
 div.integrantes-contenido{
@@ -273,7 +277,7 @@ div.integrantes-contenido{
     letter-spacing: 1px;
     width: 59%;
     position: absolute;
-    left: 37.3%;
+    left: 34%;
     padding-top: 2%;
     padding-bottom: 2%;
     top: 50%;
@@ -285,8 +289,14 @@ div.integrantes-contenido > p > span.dato{
     font-weight: bold;
 }
 
+div.integrantes-title{
+	/*display: flex;*/
+	/*justify-content: center; /* align horizontal */
+	/*align-items: center;*/
+}
+
 h1.integrantes-title{
-	margin-top: 1.5em;/*Ya que el tama;o de la barra depende del size de las letras*/
+	/*margin-top: 1.5em;/*Ya que el tama;o de la barra depende del size de las letras*/
 	margin-left: 14%;
 	padding-left: 2%; 
 	font-size: 4.2em;
