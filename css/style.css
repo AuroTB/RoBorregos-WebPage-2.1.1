@@ -290,11 +290,13 @@ font-size: 200%;
 /* Events Home CSS */
 
 .events-header{
-	padding-top: 15%;
 	position: relative;
 	font-size: 150%;
 	/*margin-top: 100px; */
-  	padding : 15%; 
+  	padding-bottom: 20%; 
+  	padding-left: 15%;
+  	padding-right: 15%;
+  	padding-top: 5%;
 	transform: translate3d(54px, 0, 0);
 	transition: transform 0.5s, padding-right 0.5s ease;
 	height: 100%;
@@ -302,8 +304,8 @@ font-size: 200%;
 }
 
 .events-jumbo img{
- width:60%;
- height: 50%;
+ width:70%;
+ height: 20%;
  position: relative center;
 }
 
@@ -315,6 +317,6 @@ font-size: 200%;
 }
 div.events-jumbo:hover
 {
-	m
+	
 	text-decoration: underline;
 }
