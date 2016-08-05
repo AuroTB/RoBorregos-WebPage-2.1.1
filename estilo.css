@@ -1,0 +1,19 @@
+div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    /* overflow: hidden; */
+}
+
+img{
+    position: absolute;
+    display: block;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+}
