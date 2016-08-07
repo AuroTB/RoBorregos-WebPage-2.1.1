@@ -206,6 +206,73 @@ body{
 
 
 
+/* About Us CSS */
+/*======================================================*/
+.about-us-header{
+	padding-top: 15%;
+	position: relative;
+	background-image: url(../img/portfolio/3.jpg);
+	background-size: cover;
+	background-position: top center;
+	font-size: 150%;
+	/*margin-top: 100px; */
+  	/*padding : 15%;*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	transform: translate3d(54px, 0, 0);
+	transition: transform 0.5s, padding-right 0.5s ease;
+	height: 100%;
+	text-align: center;
+}
+.about-us-header p{
+	padding-left: 5%;
+	padding-right: 8%;
+}
+.title-container-about-us{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+}
+.active-nav .about-us-header{
+	transform: translate3d(170px, 0, 0);
+	padding-right: 116px;
+}
+.subtitle-mision-vision{
+	font-size: 250%;
+	color:#f6a821;
+	padding-top: 0%;
+	margin-top: 0%;
+}
+.mission-vision {
+text-align: center;
+padding-top: 0%;
+margin-bottom: 10%;
+font-size: 200%;
+}
+.carousel-about-us img{
+ 	margin: auto;
+}
+.carousel-caption{
+	text-align: center;
+	transform: translateY(-150%);
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	display: block;
+}
+.content-about-us{
+	padding-top: 100px;
+	background-color: #d9d9d9; /*#9e9e9e */
+	text-align: center;
+	transform: translate3d(54px, 0, 0);
+	padding-right: 54px;
+	transition: transform 0.5s, padding-right 0.5s ease;
+}
+
+
+
 /*======================================================*/
 .content{
 	padding-top: 100px;
@@ -220,86 +287,3 @@ body{
 	transform: translate3d(170px, 0, 0);
 	padding-right: 116px;
 }
-
-
-/*======================================================*/
-/* About Us CSS */
-
-.about-us-header{
-	padding-top: 15%;
-	position: relative;
-	background-image: url(../img/portfolio/3.jpg);
-	background-size: cover;
-	background-position: top center;
-	font-size: 150%;
-	/*margin-top: 100px; */
-  	padding : 15%; 
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	transform: translate3d(54px, 0, 0);
-	transition: transform 0.5s, padding-right 0.5s ease;
-	height: 100%;
-	text-align: center;
-}
-header p{
-	padding-left: 5%;
-	padding-right: 8%;
-}
-
-.image-equipo-background{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: black;
-	opacity: 0.6;
-	color: white;
-}
-
-.active-nav .about-us-header{
-	transform: translate3d(170px, 0, 0);
-	padding-right: 116px;
-}
-.subtitle-mision-vision{
-	font-size: 250%;
-	color:#f6a821;
-	padding-top: 0%;
-	margin-top: 0%;
-}
-
-.mission-vision {
-text-align: center;
-padding-top: 0%;
-margin-bottom: 10%;
-font-size: 200%;
-}
-
-.container-carousel{
-	height: 100%;
-	padding-bottom: 0%;
-	margin-bottom: 0%;
-
-}
-
-
-.carousel-about-us{
-	 width:100%;
-     height:100%;
-     position: center;
-     padding-bottom: 0%;
-     margin-bottom: 0%;
-
- }
- .carousel-about-us img{
- 	position: center;
- 	margin: auto;
- }
-
-.carousel-caption{
-	text-align: center;
-	transform: translateY(-150%);
-	background-color: black;
-	opacity: 0.5;
-	color: white;
-
-
-}
-
