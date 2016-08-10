@@ -336,3 +336,129 @@ div.integrantes-body{
 	/*margin-right: auto;
 	margin-left: auto;*/
 }
+
+
+
+/**
+=========================Gallery===============================
+**/
+div#gallery-content{
+	text-align: unset;
+	padding-bottom: 200px;
+	padding-top: 30px;
+}
+
+
+div.gallery-title{
+	width: 100%;
+	height: 65vw;
+	max-height: 90vh;
+	position: relative;
+	padding-top: 19vw;
+	padding-bottom: 0;
+	background-image: url(../img/gallery-cover.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+div.gallery-title > img{
+	position: absolute;
+    display: block;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+h1.gallery-title{
+	text-align: center;
+	font-size: 4.5em;
+	margin-right: 50px;
+	color:honeydew;
+}
+
+h1.gallery-title > span{
+	display: inline-block;
+	width: 40%;
+	min-width: 5em;
+	border-bottom: 2px solid  darkgray;
+}
+
+
+
+
+div.gallery-year{
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+div#gallery-year-2{
+	background-color: #fbfbfb;
+}
+
+h3.gallery-title-year{
+	text-align: center;
+	font-size: 2.8em;
+}
+
+div.gallery-images{
+	margin-top: 40px;
+}
+
+
+
+div.gallery-images{
+	margin-bottom: 0px;
+}
+
+div.gallery-row-images{
+	position: relative;
+	margin-top: 50px;
+}
+
+div.gallery-event{
+	background-color: #f2f2f2;
+	width: 20%;
+	min-width: 150px;
+	max-width: 300px;
+	height: 350px;
+	border: 1px solid  #cccccc;
+	border-radius: 2px;
+}
+
+div.gallery-event-1{
+	position: relative;
+	left: 15%;
+}
+div.gallery-event-2{
+	position: absolute;
+	margin-right: auto;
+	left: 40%;
+	top: 0px;
+}
+div.gallery-event-3{
+	position: absolute;
+	margin-left: auto;
+	right: 15%;
+	top: 0px;
+}
+
+div.gallery-event > div.gallery-event-img{
+	height: 70%;
+	width: 90%;
+	background-color: red;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+
+	background-image: url(../img/gallery-cover.jpg), url(../img/gallery-cover.jpg), url(../img/gallery-cover.jpg), url(../img/gallery-cover.jpg);
+    background-position: left top, right top, left bottom, right bottom;
+	background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+
+div.gallery-event> h4{
+	text-align: center;
+	font-size: 1.4em;
+	height: 30%;
+	padding-top: 8%;
+}
